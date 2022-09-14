@@ -16,5 +16,6 @@ npx hardhat run scripts/deploy.ts
 
 ## Local dev
 
-- Run `pnpm node`
+- Run `pnpm node` to simulate a network with a number of addresses
 - In another shell, run `pnpm deploy:local`
+- `pnpm test` to run tests
