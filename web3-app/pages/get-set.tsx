@@ -24,9 +24,9 @@ const GetSet = () => {
             onChange={(ev) => setValue(+ev.target.value)}
           />
         </label>
-        <button type="submit">Set value</button>
+        <button className="ml-2" type="submit">Set value</button>
       </form>
-      <div>
+      <div className="mt-4">
         <button onClick={handleGetValue}>Get value from contract</button>
         <span>{/* show value here */}</span>
       </div>
