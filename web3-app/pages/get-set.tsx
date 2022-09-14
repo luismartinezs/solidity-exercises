@@ -7,7 +7,8 @@ const GetSet = () => {
     // get value from contract
   };
 
-  const handleSetValue = () => {
+  const handleSetValue = (event: React.SyntheticEvent) => {
+    event.preventDefault();
     // set value
   };
 
@@ -16,15 +17,18 @@ const GetSet = () => {
       <h1>Get and Set</h1>
       <p>Get and set values on the smart contract.</p>
       <form onSubmit={handleSetValue}>
-        <label>
+        <label htmlFor="value">
           Enter value:&nbsp;
           <input
+            id="value"
             type="number"
             value={value}
             onChange={(ev) => setValue(+ev.target.value)}
           />
         </label>
-        <button className="ml-2" type="submit">Set value</button>
+        <button className="ml-2" type="submit">
+          Set value
+        </button>
       </form>
       <div className="mt-4">
         <button onClick={handleGetValue}>Get value from contract</button>
