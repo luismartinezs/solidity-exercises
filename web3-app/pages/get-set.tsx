@@ -24,9 +24,10 @@ const GetSet = () => {
             type="number"
             value={value}
             onChange={(ev) => setValue(+ev.target.value)}
+            className="input"
           />
         </label>
-        <button className="ml-2" type="submit">
+        <button className="mt-2 btn" type="submit">
           Set value
         </button>
       </form>
